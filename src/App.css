@@ -1,0 +1,112 @@
+.margin {
+    margin: 10vh 20vw;
+}
+
+.flex {
+    display: flex;
+    box-shadow: 8px 8px 20px #dbdbdb;
+}
+
+.title-me {
+    height: 65vh;
+    border-radius: 5px 0 0px 5px;
+    border-right: 0px;
+    z-index: 1;
+    margin: 0;
+}
+
+.title-me footer {
+    margin-top: 23vh;
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+}
+
+.title-me h1 {
+    margin: 12vh auto 1.5rem;
+    text-align: center;
+}
+
+.title-me p {
+    text-align: center;
+    color: #777;
+}
+
+.form-me {
+    margin: 0;
+    height: 65vh;
+    box-shadow: inset 11px 0px 9px -5px #dbdbdb;
+    border-radius: 0px 5px 5px 0px;
+    width: 55%;
+    flex-shrink: 0;
+}
+
+.form-me form input:first-of-type {
+    width: 15vw;
+    margin-right: 1vw; 
+}
+
+.form-me form input:last-of-type {
+    width: 11vw;
+}
+
+.form-me form .button {
+    top: 5vh;
+    left: 8vw;
+}
+
+.message{
+    box-shadow: 9px 9px 20px #dbdbdb;
+    margin-top: 5vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .flex {
+        display: block;
+        box-shadow: 0px 0px;
+    }
+
+    .title-me footer {
+        position: absolute;
+        top: 104vh;
+        z-index: 1;
+        margin: 0px;
+        left: 20vw;
+        right: 20vw;
+    }
+
+    .margin {
+        margin: 0 0;
+    }
+
+    .title-me {
+        height: auto;
+        padding-bottom: 10vh;
+        border-radius:0px;
+    }
+
+    .form-me{
+        width: 100%;
+        box-shadow: inset 0px 12px 20px -10px #dbdbdb ;
+        text-align: center;
+        border-radius:0px 
+    }
+
+    .form-me form input:first-of-type {
+        width: 90%;
+        margin-right:0;
+        margin-bottom :3vh;
+    }
+    
+    .form-me form input:last-of-type {
+        width: 90%;
+    }
+
+    .form-me form .button {
+        left: 0;
+    }
+
+    .message {
+        margin-top: 20vw;
+    }
+}
